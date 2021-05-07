@@ -1,0 +1,339 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+Главная
+{% endblock title %}
+
+
+{% block content %}
+<!-- ##### About Us Area Start ##### -->
+<div class="about-us-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h6>Fitness Gym</h6>
+                    <h2>Почему выбирают Fitness Gym?</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="row">
+                    <!-- About Text -->
+                    <div class="col-12 col-lg-6">
+                        <div class="about-text">
+                            <p>Cеть фитнес-клубов FitnessGym является федеральным брендом. Сегодня в Нижнем Новгороде и Дзержинске уже успешно работают 11 клубов сети!</p>
+                        </div>
+                    </div>
+                    <!-- About Text -->
+                    <div class="col-12 col-lg-6">
+                        <div class="about-text">
+                            <p>Более 45 000 человек активно занимаются спортом в FitnessGym по передовым мировым стандартам! Удобное расположение FitnessGym в разных районах города позволяет выбрать ближайший к своему дому (или работе) клуб, и затраченное на дорогу время сведется к минимуму.</p>
+                        </div>
+                    </div>
+                    <!-- About Button Group -->
+                    <div class="col-12">
+                        <div class="about-btn-group mt-50">
+                            <!-- <a href="#" class="btn fitness-btn mr-3">Get a membership</a> -->
+                            <!-- <a href="#" class="btn fitness-btn btn-2">Find out more</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="about-thumb">
+                    <img src={% static "img/bg-img/man.png" %} alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### About Us Area End ##### -->
+
+<!-- ##### Experts Area Start ##### -->
+<div class="meet-the-experts-area section-padding-100-0 bg-img bg-overlay" style="background-image: url('{% static "img/bg-img/bg-6.jpg" %}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading white">
+                    <h6>Fitness Gym</h6>
+                    <h2>Наши преподаватели</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <div class="experts-text">
+                    <p>Все преподаватели учебного центра являются действующими сотрудниками «Нижегородской Фитнес Группы», объединяющей сеть фитнес-клубов Fitness Gym и World Class в Нижнем Новгороде, имеют огромный академический и практический опыт в фитнес индустрии.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-9">
+                <div class="experts-team-members">
+
+                    <!-- Single Team Members -->
+                    <div class="single-team-members wow fadeInUp" data-wow-delay="0.2s">
+                        <img src={% static "img/team-img/1.png" %} alt="">
+                        <!-- Team Members Info -->
+                        <div class="team-members-info">
+                            <h3>СВЕТЛАНА КРАЙНЕВА</h3>
+                            <h6>МАСТЕР-ТРЕНЕР</h6>
+                        </div>
+                    </div>
+
+                    <!-- Single Team Members -->
+                    <div class="single-team-members wow fadeInUp" data-wow-delay="0.3s">
+                        <img src={% static "img/team-img/2.png" %} alt="">
+                        <!-- Team Members Info -->
+                        <div class="team-members-info">
+                            <h3>ПАВЕЛ ВАНЯЕВ</h3>
+                            <h6>ЭЛИТ-ТРЕНЕР</h6>
+                        </div>
+                    </div>
+
+                    <!-- Single Team Members -->
+                    <div class="single-team-members wow fadeInUp" data-wow-delay="0.4s">
+                        <img src={% static "img/team-img/3.png" %} alt="">
+                        <!-- Team Members Info -->
+                        <div class="team-members-info">
+                            <h3>ДМИТРИЙ ОЛЕНЕВ</h3>
+                            <h6>АКАДЕМИЧЕСКИЙ ФИТНЕС ДИРЕКТОР УЧЕБНОГО ЦЕНТРА</h6>
+                        </div>
+                    </div>
+
+                    <!-- Single Team Members -->
+                    <div class="single-team-members wow fadeInUp" data-wow-delay="0.5s">
+                        <img src={% static "img/team-img/4.png" %} alt="">
+                        <!-- Team Members Info -->
+                        <div class="team-members-info">
+                            <h3>ЕКАТЕРИНА КУРНИКОВА</h3>
+                            <h6>ЭЛИТ-ТРЕНЕР</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Experts Area End ##### -->
+
+<!-- ##### Service Area Start ##### -->
+<div class="fitness-services-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+
+            <!-- Single Service Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-service-area mb-100">
+                    <div class="course-content d-flex align-items-center">
+                        <!-- Course Icon -->
+                        <div class="course-icon d-flex align-items-center justify-content-center">
+                            <img src={% static "img/core-img/dumbbell.png" %} alt="">
+                        </div>
+                        <h4>LES MILLS</h4>
+                    </div>
+                    <p>Les Mills - это всемирно популярное направление групповых фитнес-тренировок, которое полюбилось спортсменам и новичкам по всему миру из-за высокой эффективности занятий и зажигательной музыки.</p>
+                </div>
+            </div>
+
+            <!-- Single Service Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-service-area mb-100">
+                    <div class="course-content d-flex align-items-center">
+                        <!-- Course Icon -->
+                        <div class="course-icon d-flex align-items-center justify-content-center">
+                            <img src={% static "img/core-img/slim-down.png" %} alt="">
+                        </div>
+                        <h4>ВОССТАНОВИТЕЛЬНЫЙ ФИТНЕС</h4>
+                    </div>
+                    <p>Это комбинация самых различных форм и средств ЛФК, традиционного, функционального и фасциального фитнеса. На тренировках применяют строго дозированные упражнения и контролируемое дыхание, а также правильно подобранные амплитуда движений и специальное оборудование.</p>
+                </div>
+            </div>
+
+            <!-- Single Service Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-service-area mb-100">
+                    <div class="course-content d-flex align-items-center">
+                        <!-- Course Icon -->
+                        <div class="course-icon d-flex align-items-center justify-content-center">
+                            <img src={% static "img/core-img/lotus-position.png" %} alt="">
+                        </div>
+                        <h4>MIND BODY</h4>
+                    </div>
+                    <p>Mind Body – дословно «Разум и Тело». Идеальные программы для восстановления после физических нагрузок, напряженной эмоциональной трудовой деятельности, для возвращения всего организма к гармонии, снятия стресса и наполнению тела энергией. Направление объединяет такие занятия, как йога, Pilates, BodyBalance, Stretch.</p>
+                </div>
+            </div>
+
+            <!-- Single Service Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-service-area mb-100">
+                    <div class="course-content d-flex align-items-center">
+                        <!-- Course Icon -->
+                        <div class="course-icon d-flex align-items-center justify-content-center">
+                            <img src={% static "img/core-img/apple.png" %} alt="">
+                        </div>
+                        <h4>ЕДИНОБОРСТВА</h4>
+                    </div>
+                    <p>Занятия различными видами единоборств развивают человека не только физически, но и воспитывают многие качества характера – силу воли, выдержку, уважение к учителю и сопернику, веру в себя и свои силы, умение побеждать. В наших клубах вас ждут занятия по боксу и кикбоксингу, дзюдо, тайскому боксу, тхэквондо и не только! Единоборства – отличный способ избавиться от негативных эмоций и в то же время научиться в совершенстве контролировать себя!</p>
+                </div>
+            </div>
+
+            <!-- Single Service Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-service-area mb-100">
+                    <div class="course-content d-flex align-items-center">
+                        <!-- Course Icon -->
+                        <div class="course-icon d-flex align-items-center justify-content-center">
+                            <img src={% static "img/core-img/swimming.png" %} alt="">
+                        </div>
+                        <h4>БАССЕЙН</h4>
+                    </div>
+                    <p>Водные занятия помогают держать тело в тонусе, оказывают позитивное влияние на настроение и самочувствие. 7 фитнес-клубов сети Fitness Gym оснащены 25-метровыми бассейнами глубиной до 220 см. Широкий выбор водных программ, индивидуальные и групповые занятия, позволяют найти интересное занятие в бассейне для любого возраста!</p>
+                </div>
+            </div>
+
+            <!-- Single Service Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-service-area mb-100">
+                    <div class="course-content d-flex align-items-center">
+                        <!-- Course Icon -->
+                        <div class="course-icon d-flex align-items-center justify-content-center">
+                            <img src={% static "img/core-img/stationary-bike.png" %} alt="">
+                        </div>
+                        <h4>КАРДИОТРЕНИРОВКИ</h4>
+                    </div>
+                    <p>Кардиотренировка – это нагрузка, направленная на увеличение выносливости, при которой укрепляется сердечная мышца и улучшается функция кардиореспираторной системы (кровообращение и дыхание). При таких занятиях, организм использует в качестве источника энергии гликоген из печени и подкожный жир. При правильных нагрузках, тренировка очень эффективна в борьбе с лишними килограммами.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ##### Service Area End ##### -->
+
+<!-- ##### Pricing Table Area Start ##### img/bg-img/bg-7.jpg-->
+<div class="fitness-pricing-table-area section-padding-100-0 bg-img bg-overlay bg-fixed" style="background-image: url('{% static "img/bg-img/bg-7.jpg" %}');">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <!-- Single Price Table -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-price-table mb-100">
+                    <img src={% static "img/bg-img/bg-8.jpg" %} alt="">
+                    <div class="price-table-content">
+                        <!-- price -->
+                        <h2 class="price">
+                            15 190 ₽<span>/ Год</span>
+                        </h2>
+                        <h5>ДНЕВНОЙ ФИТНЕС</h5>
+                        <!-- Price Data -->
+                        <ul class="price-data">
+                            <li><i class="fa fa-circle" aria-hidden="true"></i> Годовая карта дневного посещения до 16:00</li>
+                            <li><i class="fa fa-circle" aria-hidden="true"></i> Безлимитный доступ в клуб в будни 07:00-16:00, в выходные 09:00-18:00</li>
+                            <li><i class="fa fa-circle" aria-hidden="true"></i>Доступ в любые фитнес-зоны клуба.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Price Table -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-price-table mb-100">
+                    <img src={% static "img/bg-img/bg-9.jpg" %} alt="">
+                    <div class="price-table-content">
+                        <!-- price -->
+                        <h2 class="price">
+                            15 190 ₽<span>/ Год</span>
+                        </h2>
+                        <h5>КАРТА ПОСЛЕ РАБОТЫ</h5>
+                        <!-- Price Data -->
+                        <ul class="price-data">
+                            <li><i class="fa fa-circle" aria-hidden="true"></i> Годовая карта вечернего посещения с 21:00</li>
+                            <li><i class="fa fa-circle" aria-hidden="true"></i> Безлимитный доступ в клуб в будни с 21:00, в выходные с 18:00.</li>
+                            <li><i class="fa fa-circle" aria-hidden="true"></i> Доступ в любые фитнес-зоны клуба.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Price Table -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-price-table mb-100">
+                    <img src={% static "img/bg-img/bg-10.jpg" %} alt="">
+                    <div class="price-table-content">
+                        <!-- price -->
+                        <h2 class="price">
+                            14 240 ₽<span>/ Год</span>
+                        </h2>
+                        <h5>ЮНИОРСКАЯ КАРТА</h5>
+                        <!-- Price Data -->
+                        <ul class="price-data">
+                            <li><i class="fa fa-circle" aria-hidden="true"></i> Годовой безлимитный абонемент для юниоров 14-17 лет.</li>
+                            <li><i class="fa fa-circle" aria-hidden="true"></i>  Спецкарту Юниор Space можно купить дополнительно за 3200р/мес</li>
+                            <li><i class="fa fa-circle" aria-hidden="true"></i> Доступ в любые фитнес-зоны клуба.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ##### Pricing Table Area End ##### -->
+
+<!-- ##### Working Hours Area Start ##### -->
+<div class="fitness-working-hours-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+
+            <!-- Fitness Working Hours -->
+            <div class="col-12 col-lg-6">
+                <div class="fitness-working-hours mb-100">
+                    <div class="section-heading">
+                        <h6>Fitness Gym</h6>
+                        <h2 id="t1">Расписание</h2>
+                    </div>
+                    <!-- Working Hours -->
+                    <ul class="working-hours">
+                        <li><span>Понедельник</span> <span>07:00 - 23:00</span></li>
+                        <li><span>Вторник</span> <span>07:00 - 23:00</span></li>
+                        <li><span>Среда</span> <span>07:00 - 23:00</span></li>
+                        <li><span>Четверг</span> <span>07:00 - 23:00</span></li>
+                        <li><span>Пятница</span> <span>07:00 - 23:00</span></li>
+                        <li><span>Суббота</span> <span>09:00 - 22:00</span></li>
+                        <li><span>Воскресенье</span> <span>09:00 - 22:00</span></li>
+                    </ul>
+                </div>
+            </div>
+        <!-- Our Newsletter Area -->
+            <div class="col-12 col-lg-6">
+                <div class="our-newsletter-area mb-100">
+                    <div class="section-heading">
+                        <h6>Fitness Gym</h6>
+                        <h2>Регистрация на занятие</h2>
+                    </div>
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form.username }} <br>
+                        {{ form.email }} <br>
+                        <h5>Выберите занятие</h5>
+                        {{ form.practice }} <br>
+                        <h5>Выберите Адрес</h5>
+                        {{ form.adress }} <br>
+                        <h5>Выберите Дату</h5>
+                        {{ form.date }} <br>
+                        <span>{{ error }}</span>
+                        <button type="submit" class="btn fitness-btn btn-white">Отправить</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+        <!-- ##### Working Hours Area End ##### -->
+{% endblock content %}

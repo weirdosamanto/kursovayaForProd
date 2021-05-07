@@ -1,0 +1,46 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+Новости
+{% endblock title %}
+
+
+
+{% block content %}
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url('{% static "img/bg-img/breadcumb-2.jpg" %}');">
+        <div class="bradcumbContent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Новости</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">News</li><br>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Blog Area Start ##### -->
+    <div class="blog-post-thumb mb-30"><br>
+        {% for element in news %}
+            <div class="blog-post-thumb mb-30">
+                <img src="media/{{ element.image }}" %} alt="">
+            </div>
+            <h3>{{ element.article_title }}</h3>
+            <p>{{ element.article_text }}</p>
+            <div class="post-meta">
+                <p><a>{{ element.pub_date }}</a> </p><br>
+            </div>
+        {% endfor %}
+    </div>
+    <!-- ##### Blog Area End ##### -->
+{% endblock content %}
+</html>

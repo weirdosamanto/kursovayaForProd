@@ -1,0 +1,189 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+О Нас
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area bg-img bg-overlay" style="background-image: url('{% static "img/bg-img/breadcumb.jpg" %}');">
+    <div class="bradcumbContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>О Нас</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### About Us Area Start ##### -->
+<div class="about-us--area section-padding-100">
+    <div class="container">
+        <div class="row">
+
+            <!-- About Text -->
+            <div class="col-12 col-lg-7">
+                <div class="section-heading">
+                    <h6>Fitness Gym</h6>
+                    <h2>СЕТЬ ФИТНЕС-КЛУБОВ Fitness Gym №1</h2>
+                </div>
+                <div class="about-text">
+                    <p>Сеть фитнес-клубов Fitness Gym  является федеральным брендом. Сегодня в Нижнем Новгороде и Дзержинске уже успешно работают 11 клубов сети! Более 45 000 человек активно занимаются фитнесом в Fitness Gym по передовым мировым стандартам: open space тренажерные залы, полноформатные бассейны и уроки по лицензиям крупнейших международных институтов. </p>
+                    <!-- <a href="#" class="btn fitness-btn mt-30">Get a membership</a> -->
+                </div>
+            </div>
+
+            <!-- About Thumbnail -->
+            <div class="col-12 col-lg-5">
+                <div class="about--thumb">
+                    <img src="{% static "img/bg-img/bg-12.jpg" %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### About Us Area End ##### -->
+
+<!-- ##### Cool Facts Area Start ##### -->
+<div class="cool-facts-area section-padding-100-0 bg-img bg-overlay" style="background-image: url({% static "img/bg-img/bg-13.jpg" %});">
+    <div class="container">
+        <div class="row">
+
+            <!-- Single Cool Facts -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cool-fact text-center mb-100">
+                    <img src="{% static "img/core-img/stationary-bike2.png" %}" alt="">
+                    <h2><span class="counter">1293</span></h2>
+                    <p>Km на велосипеде</p>
+                </div>
+            </div>
+
+            <!-- Single Cool Facts -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cool-fact text-center mb-100">
+                    <img src="{% static "img/core-img/chronometer.png" %}" alt="">
+                    <h2><span class="counter">12</span></h2>
+                    <p>Часов в день</p>
+                </div>
+            </div>
+
+            <!-- Single Cool Facts -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cool-fact text-center mb-100">
+                    <img src="{% static "img/core-img/beef.png" %}" alt="">
+                    <h2><span class="counter">311</span></h2>
+                    <p>Дней диеты</p>
+                </div>
+            </div>
+
+            <!-- Single Cool Facts -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cool-fact text-center mb-100">
+                    <img src="{% static "img/core-img/swimming2.png" %}" alt="">
+                    <h2><span class="counter">3000</span></h2>
+                    <p>Км в басейне</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Cool Facts Area End ##### -->
+
+<!-- ##### Team Area Start ##### -->
+<section class="teachers-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h6>Fitness Gym</h6>
+                    <h2>МЫ ЛУЧШИЕ В СВОЕМ ДЕЛЕ!</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Single Teachers -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-teachers-area mb-100">
+                    <!-- Bg Gradients -->
+                    <div class="teachers-bg-gradients"></div>
+                    <!-- Thumbnail -->
+                    <div class="teachers-thumbnail">
+                        <img src="{% static "img/team-img/t1.png" %}" alt="">
+                    </div>
+                    <!-- Meta Info -->
+                    <div class="teachers-info">
+                        <h6>СВЕТЛАНА КРАЙНЕВА</h6>
+                        <span>Сертифицированный тренер учебного центра World Class по направлению «Тренажерный зал»</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Teachers -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-teachers-area mb-100">
+                    <!-- Bg Gradients -->
+                    <div class="teachers-bg-gradients"></div>
+                    <!-- Thumbnail -->
+                    <div class="teachers-thumbnail">
+                        <img src="{% static "img/team-img/t2.png" %}" alt="">
+                    </div>
+                    <!-- Meta Info -->
+                    <div class="teachers-info">
+                        <h6>ПАВЕЛ ВАНЯЕВ</h6>
+                        <span>Сертифицированный инструктор по аквааэробике и плаванию, Сертифицированный инструктор по аэробике, Сертифицированный инструктор LesMills Body Combat, Сертифицированный инструктор по занятиям на серф-досках Stand Up Paddle in Pool</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Teachers -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-teachers-area mb-100">
+                    <!-- Bg Gradients -->
+                    <div class="teachers-bg-gradients"></div>
+                    <!-- Thumbnail -->
+                    <div class="teachers-thumbnail">
+                        <img src="{% static "img/team-img/t3.png" %}" alt="">
+                    </div>
+                    <!-- Meta Info -->
+                    <div class="teachers-info">
+                        <h6>ЕКАТЕРИНА КУРНИКОВА</h6>
+                        <span>Сертифицированный тренер учебного центра World Class по направлению «Водные программы». Сертифицированный инструктор по занятиям на серф -досках</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Teachers -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-teachers-area mb-100">
+                    <!-- Bg Gradients -->
+                    <div class="teachers-bg-gradients"></div>
+                    <!-- Thumbnail -->
+                    <div class="teachers-thumbnail">
+                        <img src="{% static "img/team-img/t4.png" %}" alt="">
+                    </div>
+                    <!-- Meta Info -->
+                    <div class="teachers-info">
+                        <h6>ДМИТРИЙ ОЛЕНЕВ</h6>
+                        <span>Выпускник факультета Физической Культуры (красный диплом), презентер международных фитнес конвенций, сертифицированный тренер-лектор World Class, сертифицированный персональный тренер FPA, лучший фитнес директор России, автор 45 научных статей и монографии «Технология обучения двигательным действиям»</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ##### Team Area End ##### -->
+{% endblock content %}

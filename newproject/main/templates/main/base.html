@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Title -->
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static "img/core-img/favicon.ico" %}">
+    
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "style.css" %}">
+
+</head>
+
+<body>
+
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <a href="\"><img src={% static "img/core-img/logo.png" %} alt=""></a>
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+    
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="\" class="nav-link px-2 link-secondary">Главная</a></li>
+          <li><a href="{% url 'News' %}" class="nav-link px-2 link-dark">Новости</a></li>
+          <li><a href="\#t1" class="nav-link px-2 link-dark">Онлайн Запись</a></li>
+          <li><a href="{% url 'about' %}" class="nav-link px-2 link-dark">О Нас</a></li>
+        </ul>
+        <div class="col-md-3 text-end">
+        {% if user.is_authenticated %}
+            <span>{{ user.username }}</span>
+            <button type="button" class="btn-outline-primary me-2"><a href="{% url 'account_logout' %}">Выход</a></button>
+        {% else %}
+            <button type="button" class="btn-outline-primary me-2"><a href="/accounts/login/">Войти</a></button>
+            <button type="button" class="fitness-btn menu-btn ml-30"><a href="/accounts/signup/">Регистрация</a></button>
+        {% endif %}
+        </div>
+      </header>
+
+
+    {% block content %}{% endblock %}
+
+    
+      <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area section-padding-100-0 bg-img bg-overlay" style="background-image: url('{% static "img/bg-img/bg-11.jpg" %}');">
+    <div class="main-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="#"><img src={% static "img/core-img/logo.png" %} alt=""></a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget-area mb-50">
+                        <!-- Widget Title -->
+                        <div class="widget-title">
+                            <h6>Вдохновляющие цитаты</h6>
+                        </div>
+
+                        <!-- Testimonials Slides -->
+                        <div class="testimonials-slides owl-carousel">
+                            <div class="single-slide">
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <p>"Нужно поддерживать крепость тела, чтобы сохранить крепость духа".</p>
+                                    <span>Виктор Гюго</span>
+                                </div>
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <p>"Спорт – это биение твоего сердца, твоё дыхание, это твой ритм жизни".</p>
+                                    <span>Дейл Карнеги</span>
+                                </div>
+                            </div>
+
+                            <div class="single-slide">
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <p>"Физические упражнения могут заменить множество лекарств, но ни одно лекарство в мире не может заменить физические упражнения".</p>
+                                    <span>Анджело Моссо</span>
+                                </div>
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <p></p>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <div class="single-slide">
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <p></p>
+                                    <span></span>
+                                </div>
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <p></p>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget-area mb-50">
+                        <div class="widget-title">
+                            <h6>КОНТАКТЫ</h6>
+                        </div>
+
+                        <!-- Single Contact -->
+                        <div class="single-contact mb-30">
+                            <span>Адреса:</span>
+                            <h6>АВТОЗАВОДСКИЙ</h6>
+                            <p>Нижний Новгород, проспект Ленина, 108</p>
+                            <h6>БУРНАКОВСКИЙ</h6>
+                            <p>Нижний Новгород, ул. Бурнаковская, 103а</p>
+                            <h6>ДЕЛОВАЯ</h6>
+                            <p>Нижний Новгород, ул. Родионова, 201, корп. 1</p>
+                            <h6>КОРАБЛИ</h6>
+                            <p>Нижний Новгород, пр. Кораблестроителей, д. 76</p>
+                        </div>
+
+                        <!-- Single Contact -->
+                        <div class="single-contact mb-30">
+                            <span>Обратная связь</span>
+                            <p>E-mail: yourmail@gmail.com</p>
+                            <p><a href="https://vk.com/weirdo_samanto"><img src={% static "img/core-img/vk_94271.png" %} alt=""></a></p>
+                            <span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html> 
