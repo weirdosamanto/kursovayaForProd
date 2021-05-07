@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'h8)*i!%0tlf@2ni5l1lpose4#9o4xfg8s@8r1y-$o@w9bnw4lt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = False #true
 
 ALLOWED_HOSTS = ['weirdosamanto.pythonanywhere.com']
 
